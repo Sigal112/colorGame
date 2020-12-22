@@ -1,2 +1,2 @@
 # colorGame
-![easy level](eazy.PNG)
+![easy level](easy.PNG)
