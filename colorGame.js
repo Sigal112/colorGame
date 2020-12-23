@@ -20,7 +20,9 @@ function init() {
 	resetGame()
 }
 
+//mode of the buttons and actions
 function modeButton() {
+	//reset the game - difrent color to guess
 	BresetGame.addEventListener("click", function() {
 		resetGame()
 		timeleft= 60;
@@ -63,8 +65,8 @@ function resetGame() {
 	colors = createRandomRgbHeart(numHeart)
 	trueColor = ColorToGuess()
 	colorDisplay.textContent = trueColor
-    paragraph.style.backgroundColor = ""
 	BresetGame.textContent = "Another Colors"
+   	paragraph.style.backgroundColor = ""
 	paragraph.textContent = "lets start!!"
 	for(let i =0; i < heart.length; i++) {
 		if(colors[i]) {
@@ -83,7 +85,7 @@ function setupHeart() {
 		heart[i].addEventListener("click", function() {
 			let clickedColor = this.style.backgroundColor
 			if(clickedColor == trueColor) {
-			    paragraph.textContent = Correct[Math.floor(Math.random()*Correct.length)];
+			   	paragraph.textContent = Correct[Math.floor(Math.random()*Correct.length)];
 				BresetGame.textContent = "Play Again?"
 				HeartsColors(clickedColor)
 				paragraph.style.backgroundColor = clickedColor
