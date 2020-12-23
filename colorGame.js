@@ -32,7 +32,7 @@ function modeButton() {
 			modeButtonSelect[1].classList.remove("selected")
 			this.classList.add("selected")
 			//num heart like the level that player selection
-			if (this.textContent === "Easy"){
+			if (this.textContent == "Easy"){
 				numHeart = 3;
 				timeleft= 60;
 			} 
@@ -82,7 +82,7 @@ function setupHeart() {
 	for(let i =0; i < heart.length; i++) {
 		heart[i].addEventListener("click", function() {
 			let clickedColor = this.style.backgroundColor
-			if(clickedColor === trueColor) {
+			if(clickedColor == trueColor) {
 			    paragraph.textContent = Correct[Math.floor(Math.random()*Correct.length)];
 				BresetGame.textContent = "Play Again?"
 				HeartsColors(clickedColor)
