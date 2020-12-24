@@ -1,4 +1,4 @@
-# colorGame
+# ✌ color Game
 
 It was a project in my web course
 I had to use skills I learned in HTML, CSS and JavaScript
